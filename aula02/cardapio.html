@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Escolha de Cardápio</title>
+</head>
+
+<body bgcolor="#CCC">
+
+  <!-- UM POUCO DE ESTILIZAÇÃO DO FORMULÁRIO E RODAPÉ -->
+
+  <style>
+    #cardapio {
+      background-color: #819FF7;
+      width: 70%;
+      margin-left: 20%;
+      font-family: "Lora";
+      justify-content: center;
+    }
+
+    #Escolha {
+      font-family: "Garamond";
+      margin: 0 auto;
+      /* Centraliza o container */
+      text-align: center;
+    }
+
+    #Escolha ul {
+      display: inline-block;
+      text-align: left;
+    }
+    }
+
+    .rodape {
+      height: 90px;
+    }
+  </style>
+  <!-- 
+       Cardapio
+    -->
+
+  <div action="" id="Escolha">
+    <h1>Escolha de Cardápio</h1>
+    <ul action="" id="lista">
+      <li>Bolinho de Macaxeira</li>
+      <li>Bruscheta</li>
+      <li>Salada</li>
+      <li>Filé Mignon ao Molho de Mostarda</li>
+      <li> Risoto de frutos do mar</li>
+      <li>Feijoada</li>
+      <li>Xinxim de Galinha</li>
+      <li>Entre outros</li>
+    </ul>
+    <br>
+    Para escolher, basta enviar o formulário abaixo<br>
+    </p>
+  </div>
+  <!--
+        INÍCIO DO FORMULÁRIO 
+    -->
+
+  <hr>
+  <form action="" id="cardapio">
+    <fieldset>
+      <legend><u> Escolha o que você mais gosta</u></legend>
+
+      <!--DADOS PESSOAIS, TELEFONE E ENDEREÇO  -->
+
+      <p><u>Dados Pessoais</u></p>
+      <label for="nome">Seu nome é: </label>
+      <input name="nome" type="text" placeholder="Digite seu nome completo> <br>
+      <label for=" idade">Qual a sua idade? </label>
+      <input name-="idade" type="date"> <br>
+      <label name="celular" for="celular">Celular: </label>
+
+      <input name="celular" type="pessoas" placeholder="Número de pessoas"> <br>
+      <label for="numero">Número de pessoas: </label>
+      <input name="numero" type="number" placeholder="Número de Pessoas"> <br>
+
+      <p><u>Horario</u></p>
+
+      <input type="radio" name="horario" value="Bolinho de Macaxeira">
+      <label for="principal">Almoço</label><br>
+      <input type="radio" name="horario" value="Bruscheta">
+      <label for="principal">Jantar</label><br>
+
+      <p><u>Preferências dietéticas</u></p>
+
+      <input type="radio" name="Preferências" value="Sem glúten">
+      <label for="principal">Sem glúten</label><br>
+      <input type="radio" name="Preferências" value="sem lactose">
+      <label for="principal">Sem lactose</label><br>
+      <input type="radio" name="Preferências" value="vegetariano">
+      <label for="principal">Vegetariano</label><br>
+      <input type="radio" name="Preferências" value="vegano">
+      <label for="principal">Vegano</label><br>
+
+      <p><u>Entrada</u></p>
+
+      <input type="checkbox" name="Bolinho" value="Bolinho de Macaxeira">
+      <label for="principal">Bolinho de Macaxeira</label><br>
+      <input type="checkbox" name="Bruscheta" value="Bruscheta">
+      <label for="principal">Bruscheta</label><br>
+      <input type="checkbox" name="Salada" value="Salada">
+      <label for="principal">Salada</label><br>
+
+      <p><u>Pratos principais</u></p>
+      <input type="checkbox" name="Filé Mignon ao Molho de Mostarda" value="Filé Mignon ao Molho de Mostarda">
+      <label for="principal">Filé Mignon ao Molho de Mostarda</label><br>
+      <input type="checkbox" name=" Risoto de frutos do mar" value=" Risoto de frutos do mar">
+      <label for="principal"> Risoto de frutos do mar</label><br>
+      <input type="checkbox" name="Feijoada" value="Feijoada">
+      <label for="principal">Feijoada</label><br>
+      <input type="checkbox" name="Xinxim de Galinha" value="Xinxim de Galinha">
+      <label for="principal">Xinxim de Galinha</label><br>
+
+      <!-- FILIAÇÃO -->
+
+      <p><u>Acompanhamentos</u></p>
+      <input type="checkbox" name="Purê de batata" value="Purê de batata">
+      <label for="principal">Purê de batata</label><br>
+      <input type="checkbox" name="Arroz" value="Arroz">
+      <label for="principal">Arroz</label><br>
+      <input type="checkbox" name="Legumes" value="Legumes">
+      <label for="principal">Legumes</label><br>
+
+      <p><u>Bebidas</u></p>
+      <input type="checkbox" name="Vinho" value="Vinho">
+      <label for="principal">Vinho</label><br>
+      <input type="checkbox" name="Água" value="Água">
+      <label for="principal">Água</label><br>
+      <input type="checkbox" name="Refrigerante" value="Refrigerante">
+      <label for="principal">Refrigerante</label><br>
+
+      <p><u>Sobremesa</u></p>
+      <input type="checkbox" name="Sorvete" value="Sorvete">
+      <label for="principal">Sorvete</label><br>
+      <input type="checkbox" name="Petit Gateau" value="Petit Gateau">
+      <label for="principal">Petit Gateau</label><br>
+      <input type="checkbox" name="Gelatina" value="Gelatina">
+      <label for="principal">Gelatina</label><br>
+
+      <!-- ENVIAR -->
+
+      Aceito os <a href="http://www.google.com">Termos</a> <input type="checkbox" name="aceite" value="OK"> <br><br>
+      <input type="button" name="enviar" value="Enviar">
+    </fieldset>
+  </form>
+
+  <br>
+
+  <div class="black" class="rodape">
+    <p>&copy; 2024 - Site desenvolvido por Victor Reimer Leite para a disciplina Desenvolvimento Web (CEDUP TIMBÓ)</p>
+  </div>
+  <hr>
+</body>
+
+</html>
